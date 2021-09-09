@@ -2,7 +2,7 @@
 <br />
 <p align="center">
     <a href="https://github.com/roee030/Book-Search-App">	
-     <img src="public/cover.png" alt="Logo" width="120" height="120">
+     <img src="public/cover.png" alt="Logo" width="200" height="120">
   </a>
   
 
