@@ -3,7 +3,7 @@ import './App.css';
 import BooksList from './components/BooksList';
 import SearchBox from './components/SearchBox';
 import axios from 'axios';
-
+import spinner from './components/AnimatedBook.gif'
 function App() {
   const [searchfield, setSearchfield] = useState("")
   const [booksResult, setBooksResult] = useState([])
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <SearchBox setSearchfield={setSearchfield} submitSearch={submitSearch} />
-      {loading && <iframe src="https://giphy.com/embed/xT77Y1T0zY1gR5qe5O" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>}
+      {loading && <img src={spinner} alt={"spinner"} />}
       <BooksList booksResult={booksResult} />
     </div>
   );
