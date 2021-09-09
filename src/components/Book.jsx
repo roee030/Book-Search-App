@@ -1,6 +1,7 @@
 import React from 'react'
 import './Book.css'
 const undefinedBookImage = "https://static.thenounproject.com/png/991703-200.png"
+
 const Book = ({ title, description, image }) => {
     const maxChar = 50
     if (description && description?.length > maxChar) {

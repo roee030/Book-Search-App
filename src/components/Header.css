@@ -1,0 +1,8 @@
+.header-root{
+    height:20vh;
+    background-image:url("../assets/backgroundHeader.png");
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-size: cover;
+}
