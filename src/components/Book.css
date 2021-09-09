@@ -21,7 +21,7 @@
   and (max-device-width: 580px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .book-root{
-        flex: 0 0 100%;
+        flex: 0 0 90%;
     }
 }
 @media only screen 
