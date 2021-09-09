@@ -1,5 +1,6 @@
 import React from 'react'
 import './Book.css'
+const undefinedBookImage = "https://static.thenounproject.com/png/991703-200.png"
 const Book = ({ title, description, image }) => {
     const maxChar = 50
     if (description && description?.length > maxChar) {
@@ -12,7 +13,7 @@ const Book = ({ title, description, image }) => {
     }
     return (
         <div className="book-root">
-            <img src={image} alt={"Book Cover"} className="book-cover" />
+            <img src={image || undefinedBookImage} alt={"Book Cover"} className="book-cover" />
             <div className="book-title">{title}</div>
             <div>{description}</div>
         </div>
