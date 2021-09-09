@@ -4,17 +4,16 @@ import BooksList from './components/BooksList';
 import SearchBox from './components/SearchBox';
 import axios from 'axios';
 
-// process.env.REACT_APP_API
 function App() {
   const [searchfield, setSearchfield] = useState("")
   const [booksResult, setBooksResult] = useState([])
 
   const submitSearch = (e) => {
     e.preventDefault();
-    axios.get(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchfield)}&key=AIzaSyBqzYuCxoU0-3_i6qfhxS1sS4GgdTZUnrI&maxResults=10`)
+    axios.get(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchfield)}&key=${process.env.REACT_APP_API}&maxResults=10`)
       .then(data => setBooksResult(data.data.items));
   }
-
+  // console.log(booksResult);
   return (
     <div className="App">
       <SearchBox setSearchfield={setSearchfield} submitSearch={submitSearch} />
