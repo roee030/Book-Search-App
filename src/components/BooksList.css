@@ -1,4 +1,6 @@
+
 .books-list-root{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }

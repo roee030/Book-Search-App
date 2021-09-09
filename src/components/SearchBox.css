@@ -1,11 +1,17 @@
 .search-root{
     position: relative;
 }
+.search-root:focus-visible{
+    outline: none;
+}
 .search-input{
     width: 250px;
     border-radius: 20px;
     padding: 10px;
     border: none;
+}
+.search-input:focus-visible{
+    outline: none;
 }
 .search-icon{
     position: absolute;
