@@ -1,17 +1,17 @@
 import React from 'react';
+import './SearchBox.css';
+import searchIcon from '../assets/searchIcon.png';
 
 const SearchBox = ({ setSearchfield, submitSearch }) => {
     return (
-        <form onSubmit={(e) => submitSearch(e)} className=''>
+        <form onSubmit={(e) => submitSearch(e)} className='search-root'>
             <input
-                className=''
-                type='search'
+                className='search-input'
                 placeholder='search book'
                 onChange={(e) => setSearchfield(e.target.value)}
             />
-            <button>
-                Search
-            </button>
+            <img className="search-icon" src={searchIcon} alt={"searchIcon"} onClick={(e) => submitSearch(e)} />
+
         </form >
     );
 }

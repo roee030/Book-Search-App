@@ -1,0 +1,16 @@
+.search-root{
+    position: relative;
+}
+.search-input{
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+.search-icon{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    width: 25px;
+    height: 25px;
+}
