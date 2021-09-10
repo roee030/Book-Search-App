@@ -10,7 +10,7 @@ const Book = ({ title, description, image }) => {
             Math.min(description.length, description.lastIndexOf(" "))) + " . . ."
     }
     else {
-        description = "Null"
+        description = "There is no description"
     }
     return (
         <div className="book-root">
