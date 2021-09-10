@@ -11,6 +11,7 @@
 .book-cover{
     width: 240px;
     height: 320px;
+    border: 1px solid black;
 }
 .book-title{
     font-weight: bold;

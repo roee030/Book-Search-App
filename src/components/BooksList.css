@@ -1,6 +1,10 @@
 
 .books-list-root{
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.empty-list{
+    font-size:22px;
 }
